@@ -1,0 +1,12 @@
+static website used only html,css,js.
+-user can't intract with website
+-only view
+
+constraints:-
+
+step 1: create navbar - set logo properly
+step 2: create images gallery using banner 
+
+
+
+git-hub
