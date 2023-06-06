@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=Foldit&family=League+Spartan:wght@500&family=Literata:wght@300;400&family=Noto+Serif+NP+Hmong:wght@500&family=Pacifico&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap");
+.about-head{
+    font-family: "Pacifico", cursive;
+    letter-spacing:6px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-about-span{
+color: purple;
+}
+body{
+    background-color: rgb(191, 222, 248);
+}
+.about-img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img{
+    display: flex;
+    height: 300px;
+
+}
+.about-ul{
+letter-spacing: 1px;
+font-size: 25px;
+font-family:Caveat;
+list-style-type:none;
+margin-left: 400px;
+/* padding:7px; */
+}
