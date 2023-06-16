@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./Form.css">
 </head>
 <body>
+    <script src="./Form.js"></script>
     <form>
     <div class="headerDiv">
         <h1 class="headerh1">Customer - Contact Form</h1>
@@ -14,45 +15,70 @@
     <div class="grid-div">
 <div>
     <label class="label-div">Enter Your First Name*</label><br><br>
-    <input type="text" placeholder="Enter Your First-name"  class="name-input"><br><br>
-    
+    <input type="text" placeholder="Enter Your First-name"  class="name-input" id="fname" required><br><br>
     <label class="label-div">Enter Your G - mail*</label><br><br>
-    <input type="email" class="name-input" placeholder="Enter Your G-mail" required><br><br>
+    <input type="email" class="name-input" placeholder="Enter Your G-mail" required id="email"><br><br>
     <label class="label-div">Gender*</label><br><br>
     <input
     type="radio"
     id="male"
     name="gender"
-    value="email"/>
+    value="male" id="male"/>
     <label  for="male"class="gender-input">Male</label><br><br>
-    <input type="radio" id="female" value="female" name="gender" required>
+    <input type="radio" id="female" value="female" name="gender" id="female" required>
     <label for="female" class="gender-input">FeMale</label><br><br>
 <label class="label-div">Enter Your Message 😉</label><br><br>
-<input type="text" class="name-input" placeholder="hello !!!" required>
+<input type="text" class="name-input" placeholder="hello !!!" required id="msg">
 </div>
 <div>
     <label class="label-div">Enter Your Last Name*</label><br><br>
-    <input type="text" class="name-input" placeholder="First-Name" required><br><br>
+    <input type="text" class="name-input" placeholder="Enter Your Last-Name" required id="lname"><br><br>
     <label class="label-div">Enter Your Phone-No*</label><br><br>
-    <input type="text" class="name-input" placeholder="Enter Your Ph-No" required><br><br>
+    <input type="text" class="name-input" placeholder="Enter Your Ph-No" required id="phno"><br><br>
     <label class="label-div">Country*</label><br><br>
-    <input type="checkbox" required id="Albania" vlaue="Albania">
+    <input type="checkbox" required id="Albania" value="Albania">
     <label class="gender-input">Albania</label><br><br>
-    <input type="checkbox" required id="Algeria" vlaue="Algeria">
+    <input type="checkbox" required id="Algeria" value="Algeria">
     <label class="gender-input">Algeria</label><br><br>
-    <input type="checkbox" required id="Belgium" vlaue="Belgium">
+    <input type="checkbox" required id="Belgium" value="Belgium">
     <label class="gender-input">Belgium</label><br><br>
-    <input type="checkbox" required id="Brazil" vlaue="Brazil">
+    <input type="checkbox" required id="Brazil" value="Brazil">
     <label class="gender-input">Brazil</label><br><br>
-    <input type="checkbox" id="China" vlaue="China" required>
+    <input type="checkbox" id="China" value="China" required>
     <label class="gender-input">China</label><br><br>
-    <input type="checkbox" id="india" vlaue="india" required>
+    <input type="checkbox" id="india" value="india" required>
     <label class="gender-input">India</label>
 </div> 
     </div>
   
     <div class="submission-div">
-        <button type="submit" class="submit-btn">Submit</button>
+        <button type="submit" class="submit-btn" id="submit" onclick="getElementvalue()">Submit</button>
+                            </div>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>First-Name</th>
+                                            <th>Last-Name</th>
+                                            <th>G-mail</th>
+                                            <th>Ph-Number</th>
+                                            <th>Gender</th>
+                                            <th>Country</th>
+                                            <th>Message</th>
+                                        </tr>
+                                        <tbody  id="my-table">
+                                            <tr id="row-type">
+                                                <td><textarea id="fname"></textarea></td>
+                                                <td><textarea id="lname"></textarea></td>
+                                                <td><textarea id="email"></textarea></td>
+                                                <td><textarea id="phno"></textarea></td>
+                                                <td><textarea id="gender"></textarea></td>
+                                                <td><textarea id="Country"></textarea></td>
+                                                <td><textarea id="msg"></textarea></td>
+                                            </tr>
+                                        </tbody>
+                                    </thead>
+                                </table>
                             </div>
                             </form>
    
